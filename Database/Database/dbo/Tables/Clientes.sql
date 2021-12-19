@@ -1,0 +1,13 @@
+﻿CREATE TABLE dbo.Clientes
+(
+Cedula int NOT NULL CONSTRAINT
+PK_Clientes PRIMARY KEY CLUSTERED(Cedula)
+,Nombre VARCHAR(250) NOT NULL
+,Apellidos VARCHAR(250) NOT NULL
+,Dirreccion VARCHAR(250) NOT NULL
+,FechaNacimientos Datetime NOT NULL
+,Telefono Int NOT NULL
+)
+WITH (DATA_COMPRESSION = PAGE)
+GO
+

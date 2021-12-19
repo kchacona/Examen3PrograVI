@@ -1,0 +1,13 @@
+﻿CREATE TABLE dbo.Productos
+(
+Id_Productos INT NOT NULL IDENTITY(1,1) CONSTRAINT
+PK_Productos PRIMARY KEY CLUSTERED(Id_Productos)
+,Categoria VARCHAR(250) NOT NULL
+,Nombre VARCHAR(250) NOT NULL
+,Cantidad_Disponible Int NOT NULL
+,Caracteristica VARCHAR(250) NOT NULL
+,Estado BIT NOT NULL
+)
+WITH (DATA_COMPRESSION = PAGE)
+GO
+
